@@ -2,36 +2,147 @@
   "projects": [
     {
       "id": "k-park",
-      "title": "K Park Parking App",
-      "date": "2025-10-10",
-      "summary": "Branding and UI concept for a campus parking app.",
-      "details": "Designed logo and flows for finding parking.",
-      "tags": ["ui","branding","campus"],
-      "difficulty": "intermediate",
-      "image": "assets/images/kpark.jpg",
-      "imageAlt": "K Park app logo"
-    },
-    {
-      "id": "class-vacancy",
-      "title": "Class Vacancy Schedule",
-      "date": "2025-10-12",
-      "summary": "Editable weekly schedule for open class slots.",
-      "details": "Printable table and HTML/CSS version.",
-      "tags": ["planning","html","table"],
-      "difficulty": "beginner",
-      "image": "assets/images/classVacancySchedule.png",
-      "imageAlt": "Class vacancy schedule table"
-    },
-    {
-      "id": "personal-portfolio",
-      "title": "Personal Portfolio",
-      "date": "2025-10-15",
-      "summary": "Single-page portfolio with greeting and form.",
-      "details": "Theme toggle + validation.",
-      "tags": ["web","portfolio","javascript"],
+      "title": "K-Park Campus Parking System",
+      "date": "2024-11-01",
+      "summary": "A campus parking product concept for KFUPM that helps users find, reserve, and manage parking spaces.",
+      "details": "K-Park combines requirements analysis, UML modeling, and mobile prototype screens for students, faculty, accessibility users, administrators, and security staff.",
+      "brief": "K-Park is a campus-based parking system designed to reduce the uncertainty of finding parking around KFUPM buildings and open spaces. The concept lets users browse buildings with parking, check available spots, reserve a spot in advance, view reservation history, receive time-limit reminders, and report false parking. It also defines admin and security workflows for managing parking spots, role-based parking areas, overstays, and false parking reports.",
+      "role": "Software engineering case study",
+      "duration": "SWE206 project",
+      "impact": "Mapped a complete parking journey from authentication to reservation, notification, and operational follow-up.",
+      "tags": ["product design", "mobile UI", "UML", "campus"],
       "difficulty": "advanced",
-      "image": "assets/images/gradpic2022.jpg",
-      "imageAlt": "My portrait used in the portfolio"
+      "tools": ["Requirements analysis", "UML diagrams", "Mobile prototyping", "HTML/CSS/JS"],
+      "highlights": [
+        "Defined functional and non-functional requirements for real-time parking availability, reservations, reminders, and user permissions.",
+        "Modeled user, admin, and security workflows through use case, activity, class, and sequence diagrams.",
+        "Designed light and dark mobile interface screens for authentication, dashboards, reservations, notifications, accessibility parking, and admin actions.",
+        "Included operational controls for adding/removing parking spots, detecting false parking, and notifying security about overstays."
+      ],
+      "image": "assets/images/kpark/kpark-dashboard.png",
+      "imageAlt": "K-Park mobile dashboard in light and dark themes",
+      "gallery": [
+        {
+          "src": "assets/images/kpark/kpark-dashboard.png",
+          "alt": "K-Park user dashboard showing a current reservation in light and dark themes",
+          "caption": "User dashboard with current reservation status and a clear parking action."
+        },
+        {
+          "src": "assets/images/kpark/kpark-auth.png",
+          "alt": "K-Park login screens connected to central authentication",
+          "caption": "Login flow connected to central authentication."
+        },
+        {
+          "src": "assets/images/kpark/kpark-reservation-flow.png",
+          "alt": "K-Park available parking list in light and dark themes",
+          "caption": "Available parking list and reservation entry point."
+        },
+        {
+          "src": "assets/images/kpark/kpark-map-menu.png",
+          "alt": "K-Park dashboard with navigation drawer",
+          "caption": "Navigation drawer for account, notifications, history, and settings."
+        },
+        {
+          "src": "assets/images/kpark/kpark-notification.png",
+          "alt": "K-Park successful reservation notification screens",
+          "caption": "Reservation feedback screens for successful and unsuccessful states."
+        },
+        {
+          "src": "assets/images/kpark/kpark-accessibility.png",
+          "alt": "K-Park accessible parking selection screens",
+          "caption": "Accessible parking flow with visual theme options."
+        },
+        {
+          "src": "assets/images/kpark/kpark-admin.png",
+          "alt": "K-Park admin dashboard screens",
+          "caption": "Admin view for active reservations and operational decisions."
+        },
+        {
+          "src": "assets/images/kpark/kpark-use-case.png",
+          "alt": "K-Park use case diagram",
+          "caption": "System use case diagram covering user, admin, security, and portal interactions."
+        }
+      ]
+    },
+    {
+      "id": "guroosh",
+      "title": "Guroosh Personal Finance Platform",
+      "date": "2025-12-11",
+      "summary": "A full-stack personal finance platform for expense tracking, investment monitoring, Zakat calculation, and advisor services.",
+      "details": "Guroosh is a React and Node.js web application that unifies personal finance tracking, real-time portfolio data, Islamic finance calculations, role-based workflows, and admin oversight.",
+      "brief": "Guroosh is a comprehensive web-based personal finance management platform designed for individual clients, financial advisors, and system administrators. It addresses fragmented financial management by bringing expense tracking, budget monitoring, investment portfolio views, Islamic Zakat calculations, and professional advisor communication into one product. The platform uses role-based access, secure authentication, chart-driven insights, multi-theme UI, and external API integrations for market and gold-price data.",
+      "role": "Full-stack web application team project",
+      "duration": "SWE363 final project",
+      "impact": "Delivered an end-to-end finance platform concept with client, advisor, and admin experiences supported by modern web architecture.",
+      "tags": ["full-stack", "React", "Node.js", "finance"],
+      "difficulty": "advanced",
+      "tools": ["React 18", "Vite", "Tailwind CSS", "Node.js", "Express", "MongoDB", "JWT", "ApexCharts"],
+      "highlights": [
+        "Built a role-based product model for clients, financial advisors, and administrators.",
+        "Integrated expense tracking, budgets, financial goals, and investment portfolio monitoring across stocks, crypto, gold, and real estate.",
+        "Implemented an Islamic finance workflow with Zakat calculation using a gold-based nisab threshold and asset aggregation.",
+        "Designed dashboards, charts, authentication flows, advisor request management, admin oversight, and theme settings.",
+        "Structured the app around React components, context providers, service-layer API modules, JWT authentication, and MongoDB schemas."
+      ],
+      "image": "assets/images/guroosh/guroosh-dashboard.jpg",
+      "imageAlt": "Guroosh client dashboard showing financial overview cards and quick actions",
+      "gallery": [
+        {
+          "src": "assets/images/guroosh/guroosh-dashboard.jpg",
+          "alt": "Guroosh client dashboard with balance, spending, investments, quick actions, and accounts",
+          "caption": "Client dashboard with key balances, quick actions, account summaries, and chart-driven financial status."
+        },
+        {
+          "src": "assets/images/guroosh/guroosh-login.jpg",
+          "alt": "Guroosh login page with email and password fields",
+          "caption": "Authentication screen with a clean login layout."
+        },
+        {
+          "src": "assets/images/guroosh/guroosh-registration.png",
+          "alt": "Guroosh registration form with account fields",
+          "caption": "Registration flow with validation-oriented fields and role selection."
+        },
+        {
+          "src": "assets/images/guroosh/guroosh-investments.jpg",
+          "alt": "Guroosh investment overview with chart and portfolio controls",
+          "caption": "Investment portfolio overview with asset performance visualization."
+        },
+        {
+          "src": "assets/images/guroosh/guroosh-expenses.jpg",
+          "alt": "Guroosh spending page with expense form and charts",
+          "caption": "Expense tracking interface with categorization and budget analytics."
+        },
+        {
+          "src": "assets/images/guroosh/guroosh-zakat.png",
+          "alt": "Guroosh Zakat calculator with nisab threshold and asset breakdown",
+          "caption": "Zakat calculator using gold-based nisab and categorized asset breakdowns."
+        },
+        {
+          "src": "assets/images/guroosh/guroosh-advisor.jpg",
+          "alt": "Guroosh advisor request management page",
+          "caption": "Advisor workflow for reviewing and managing client requests."
+        },
+        {
+          "src": "assets/images/guroosh/guroosh-admin-health.jpg",
+          "alt": "Guroosh system health and activity admin dashboard",
+          "caption": "Admin system health dashboard with platform metrics and activity monitoring."
+        },
+        {
+          "src": "assets/images/guroosh/guroosh-admin-users.png",
+          "alt": "Guroosh user management admin page",
+          "caption": "Admin user management view for platform oversight."
+        },
+        {
+          "src": "assets/images/guroosh/guroosh-theme-settings.jpg",
+          "alt": "Guroosh settings page showing light theme controls",
+          "caption": "Settings and theme customization interface."
+        },
+        {
+          "src": "assets/images/guroosh/guroosh-logo.jpg",
+          "alt": "Guroosh logo mark",
+          "caption": "Guroosh brand mark for the finance platform."
+        }
+      ]
     }
   ]
 }

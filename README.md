@@ -1,18 +1,75 @@
-﻿ASSIGNMENT 4 - PERSONAL WEB APPLICATION (README)
+# A. Alguraini Portfolio
 
-Live Demo: https://a-alguraini.github.io/assignment-4/ (enable Pages on main)
+A professional software engineering portfolio built with vanilla HTML, CSS, and JavaScript. The site highlights selected project case studies with searchable project cards, dedicated detail pages, curated project screenshots, responsive layouts, and a lightweight GitHub feed.
+
+## Live Demo
+
+Live Demo: https://a-alguraini.github.io/assignment-4/
+
 Repository: https://github.com/A-Alguraini/assignment-4
 
-Overview
-A polished, production-ready personal portfolio built with vanilla HTML, CSS, and JavaScript. This capstone iteration combines all prior work (Assignments 1-3) into a single refined application featuring persistent visitor state (name, theme, pinned projects), multi-step filtering logic (difficulty + tags + search + pinned toggle), a lazy-loaded GitHub feed, session timer, and performance optimizations (content-visibility, deferred fetches, reduced-motion support).
+## Featured Projects
 
-Run Locally
+### K-Park Campus Parking System
+
+K-Park is a campus parking system concept for KFUPM. The case study presents requirements analysis, UML modeling, and prototype screens for users, administrators, security staff, and accessibility parking flows.
+
+### Guroosh Personal Finance Platform
+
+Guroosh is a full-stack personal finance management platform built as a SWE363 final project. It combines expense tracking, investment monitoring, Zakat calculation, financial advisor workflows, admin oversight, role-based access, and dashboard analytics.
+
+## Features
+
+- Professional About section focused on software engineering strengths.
+- Clickable project cards that open dedicated case-study pages.
+- Project data stored in `assets/projects.json` for easier updates.
+- K-Park and Guroosh galleries with curated screenshots from project reports.
+- Search, sorting, tag filters, difficulty filter, and pinned project support.
+- Dark and light theme toggle with localStorage persistence.
+- Lazy-loaded GitHub repository feed with manual refresh.
+- Contact form with client-side validation and status messages.
+- Responsive design for desktop and mobile screens.
+- Accessibility basics: semantic landmarks, keyboard controls, focus states, alt text, and aria-live status regions.
+
+## Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript
+- GitHub API
+- Local JSON project data
+
+## Run Locally
+
 1. Clone the repository:
-   git clone https://github.com/A-Alguraini/assignment-4.git
-2. Open the folder in VS Code.
-3. Launch with Live Server (recommended) or open index.html directly in a browser.
 
-Project Structure
+```bash
+git clone https://github.com/A-Alguraini/assignment-4.git
+```
+
+2. Open the project folder:
+
+```bash
+cd assignment-4
+```
+
+3. Start a local server:
+
+```bash
+python -m http.server 5500
+```
+
+4. Open:
+
+```text
+http://127.0.0.1:5500
+```
+
+Opening `index.html` directly also works for most static content, but a local server is recommended because project data is fetched from JSON.
+
+## Project Structure
+
+```text
 assignment-4/
   index.html
   css/
@@ -20,48 +77,39 @@ assignment-4/
   js/
     script.js
   assets/
-    images/
     projects.json
+    images/
+      kpark/
+      guroosh/
+      gradpic2022.jpg
   docs/
-    ai-usage-report.md
     technical-documentation.md
+    ai-usage-report.md
   presentation/
     slides.pdf
-    demo-video.mp4
-  .gitignore
-  README.md
+    demo-video.mkv
+```
 
-Features
-- Tabbed navigation (About / Projects / Contact) with smooth transitions.
-- Time-based greeting + personalized name stored in localStorage.
-- Session timer showing how long a visitor has been on the page.
-- Dark / light theme toggle persisted across sessions.
-- Project gallery with search, tag chips, difficulty filter, and pinned-first sorting.
-- Stats bar displaying visible / total projects, pin count, and active filters.
-- GitHub feed (top 6 repos) loaded lazily via IntersectionObserver with manual refresh.
-- Contact form with real-time validation and toast notifications.
-- On-scroll reveal animations respecting prefers-reduced-motion.
-- Optimized with content-visibility, lazy images, explicit dimensions, and CSS preload.
+## Project Data
 
-Accessibility
-- Semantic landmarks (header, nav, main, footer).
-- Keyboard-operable controls with visible focus rings.
-- aria-live status regions for dynamic content.
-- Descriptive alt text on all images.
+Each project in `assets/projects.json` supports:
 
-Compatibility
-Tested on Chrome, Edge, Firefox (desktop), iOS Safari, and Android Chrome.
+- `id`, `title`, `date`, `summary`, and `details`
+- `brief`, `role`, `duration`, and `impact`
+- `tags`, `difficulty`, `tools`, and `highlights`
+- `image`, `imageAlt`, and `gallery`
 
-Deployment (GitHub Pages)
-1. Repo -> Settings -> Pages.
-2. Source: Deploy from branch main, folder / (root).
-3. Site URL: https://a-alguraini.github.io/assignment-4/
+This keeps the portfolio maintainable: adding a new case study mostly means adding assets and a JSON entry.
 
-AI Summary
-Documented in docs/ai-usage-report.md. AI assisted with brainstorming the GitHub feed, pinning workflow, documentation outlines, and presentation structure. All outputs were reviewed and adapted for accessibility, performance, and personal style.
+## Deployment
 
-Presentation
-See presentation/README.md for outline and file placeholders (slides.pdf, demo-video.mp4).
+Deploy with GitHub Pages:
 
-License
-MIT (or your preferred license).
+1. Go to repository Settings.
+2. Open Pages.
+3. Set source to the `main` branch and root folder.
+4. Save and wait for the Pages URL to update.
+
+## Notes
+
+The Guroosh and K-Park case-study images were curated from the provided project PDF reports and optimized into web-ready assets. Temporary extraction files are not required for the live site.

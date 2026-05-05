@@ -2,69 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Interactive Portfolio</title>
-  <link rel="preload" href="css/styles.css" as="style">
-  <link rel="stylesheet" href="css/styles.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A. Alguraini software engineering portfolio with selected projects and case studies." />
+  <title>A. Alguraini | Software Engineering Portfolio</title>
+  <link rel="icon" href="data:," />
+  <link rel="preload" href="css/styles.css" as="style" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body class="light">
-  <header class="container">
-    <div class="brand">My Portfolio</div>
-    <nav class="tabs" role="tablist" aria-label="Sections">
-      <button class="tab active" data-tab="about" role="tab" aria-selected="true">About</button>
-      <button class="tab" data-tab="projects" role="tab" aria-selected="false">Projects</button>
-      <button class="tab" data-tab="contact" role="tab" aria-selected="false">Contact</button>
-    </nav>
-    <div class="actions">
-      <div class="timer" aria-live="polite" aria-label="Time on page">
-        <span>Time here:</span>
-        <strong id="sessionTimer">00:00</strong>
-      </div>
-      <button id="themeToggle" class="btn" aria-label="Toggle theme">🌓</button>
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#about" aria-label="Go to about section">
+        <span class="brand-mark">AA</span>
+        <span>
+          <strong>A. Alguraini</strong>
+          <small>Software Engineering Portfolio</small>
+        </span>
+      </a>
+      <nav class="tabs" role="tablist" aria-label="Portfolio sections">
+        <button class="tab active" data-tab="about" role="tab" aria-selected="true">About</button>
+        <button class="tab" data-tab="projects" role="tab" aria-selected="false">Projects</button>
+        <button class="tab" data-tab="contact" role="tab" aria-selected="false">Contact</button>
+      </nav>
+      <button id="themeToggle" class="btn-outline compact" type="button" aria-label="Toggle color theme">Dark</button>
     </div>
   </header>
 
-  <main class="container">
+  <main id="mainContent" class="container">
     <section id="about" class="panel active" role="tabpanel">
-      <h1 id="greeting" class="reveal"></h1>
-      <p class="muted reveal">Welcome to my portfolio. Explore my work, filter projects by tags, and get in touch.</p>
-        <figure class="card reveal" style="max-width: 340px">
+      <div class="about-layout">
+        <div class="about-copy">
+          <p class="eyebrow reveal">Software engineering student</p>
+          <h1 id="greeting" class="reveal">Building useful, human-centered software.</h1>
+          <p class="lead reveal">
+            I turn product ideas into clear requirements, usable interfaces, and working web experiences.
+            My strongest projects combine practical frontend development with careful system thinking.
+          </p>
+          <div class="hero-actions reveal">
+            <button class="btn" type="button" data-tab="projects">View Projects</button>
+            <a class="btn-outline" href="https://github.com/A-Alguraini" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <dl class="quick-stats reveal" aria-label="Portfolio highlights">
+            <div>
+              <dt>2</dt>
+              <dd>Featured projects</dd>
+            </div>
+            <div>
+              <dt>UML</dt>
+              <dd>Requirements and modeling</dd>
+            </div>
+            <div>
+              <dt>React</dt>
+              <dd>Full-stack web apps</dd>
+            </div>
+          </dl>
+        </div>
+        <figure class="profile-frame reveal">
           <img
             src="assets/images/gradpic2022.jpg"
-            alt="My profile portrait"
-            width="680" height="680"
-            loading="lazy"
-            style="border-radius:12px; display:block; width:100%; height:auto;"
+            alt="Portfolio portrait"
+            width="680"
+            height="680"
+            loading="eager"
           />
-          <figcaption class="muted" style="margin-top:6px">Hello! This is me.</figcaption>
+          <figcaption>Focused on clean interfaces, clear flows, and reliable execution.</figcaption>
         </figure>
-      <details class="reveal">
-        <summary>What’s new in this version?</summary>
-        <ul>
-          <li>Pinned project workflow with difficulty, tag, and search filters</li>
-          <li>Live GitHub feed with lazy loading and manual refresh</li>
-          <li>Personalized greeting, timer, and improved performance defaults</li>
-        </ul>
-      </details>
-      <div class="card reveal identity-card">
-        <form id="nameForm">
-          <label for="displayName">Tell me how to greet you</label>
-          <div class="name-row">
-            <input id="displayName" name="displayName" placeholder="Enter a nickname" minlength="2" required />
-            <button class="btn" type="submit">Save</button>
-            <button class="btn-outline" type="button" id="clearName">Clear</button>
-          </div>
-          <small id="nameStatus" class="muted" aria-live="polite"></small>
-        </form>
       </div>
+
+      <section class="section-block reveal" aria-labelledby="focusHeading">
+        <div class="section-head">
+          <p class="eyebrow">Focus</p>
+          <h2 id="focusHeading">What I Bring To A Team</h2>
+        </div>
+        <div class="focus-grid">
+          <article class="focus-item">
+            <h3>Product Thinking</h3>
+            <p>I start from the user journey, define constraints, and shape features into clear, testable requirements.</p>
+          </article>
+          <article class="focus-item">
+            <h3>Frontend Craft</h3>
+            <p>I build responsive interfaces with accessible controls, maintainable styling, and purposeful interaction.</p>
+          </article>
+          <article class="focus-item">
+            <h3>System Modeling</h3>
+            <p>I use UML, sequence flows, and structured documentation to make software behavior easier to reason about.</p>
+          </article>
+        </div>
+      </section>
     </section>
 
     <section id="projects" class="panel" role="tabpanel" aria-hidden="true">
-      <div class="controls reveal">
-        <input id="searchInput" type="search" placeholder="Search projects..." aria-label="Search projects"/>
+      <div class="section-head reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects And Case Studies</h2>
+        <p class="muted">A focused set of projects that show design decisions, implementation details, and project outcomes.</p>
+      </div>
+
+      <div class="controls reveal" aria-label="Project controls">
+        <input id="searchInput" type="search" placeholder="Search projects" aria-label="Search projects" />
         <select id="sortSelect" aria-label="Sort projects">
-          <option value="title">Sort by Title (A–Z)</option>
-          <option value="date">Sort by Date (Newest)</option>
+          <option value="title">Sort by Title A-Z</option>
+          <option value="date">Sort by Date Newest</option>
         </select>
         <select id="difficultySelect" aria-label="Filter by difficulty">
           <option value="any">All difficulty levels</option>
@@ -80,24 +120,25 @@
       </div>
 
       <div id="status" class="status" role="status" aria-live="polite"></div>
-      <div id="projectStats" class="stats" aria-live="polite"></div>
+      <div id="projectStats" class="stats reveal" aria-live="polite"></div>
       <ul id="projectList" class="grid"></ul>
+
       <template id="projectItemTemplate">
-        <li class="card reveal">
-          <button class="pin" type="button" aria-pressed="false" title="Pin project">☆</button>
-          <img class="thumb" alt="" loading="lazy" width="800" height="450" style="display:none; width:100%; height:auto; border-radius:10px; margin-bottom:8px;" />
-          <div class="card-head">
-            <h3 class="title"></h3>
-            <span class="date"></span>
-          </div>
-          <div class="meta">
-            <span class="difficulty"></span>
-          </div>
-          <p class="summary"></p>
-          <div class="tags"></div>
-          <button class="accordion">Details</button>
-          <div class="panel-acc">
-            <p class="details"></p>
+        <li class="project-card reveal">
+          <button class="pin" type="button" aria-pressed="false" title="Pin project">Pin</button>
+          <img class="thumb" alt="" loading="lazy" width="900" height="720" />
+          <div class="card-body">
+            <div class="card-head">
+              <h3 class="title"></h3>
+              <span class="date"></span>
+            </div>
+            <div class="meta">
+              <span class="difficulty"></span>
+              <span class="role"></span>
+            </div>
+            <p class="summary"></p>
+            <div class="tags"></div>
+            <button class="project-open btn-outline" type="button">View case study</button>
           </div>
         </li>
       </template>
@@ -105,8 +146,9 @@
       <section id="githubFeed" class="feed reveal" aria-labelledby="githubHeading">
         <header class="feed-head">
           <div>
-            <h2 id="githubHeading">Live GitHub Feed</h2>
-            <p class="muted">Latest public repositories from GitHub</p>
+            <p class="eyebrow">GitHub</p>
+            <h2 id="githubHeading">Recent Public Repositories</h2>
+            <p class="muted">Latest repository activity from GitHub.</p>
           </div>
           <button id="githubRefresh" class="btn-outline" type="button">Refresh</button>
         </header>
@@ -123,38 +165,105 @@
               <span class="repo-lang"></span>
               <span class="repo-updated"></span>
             </div>
-            <a class="repo-link" target="_blank" rel="noopener">View on GitHub</a>
+            <a class="repo-link" target="_blank" rel="noopener">Open repo</a>
           </li>
         </template>
       </section>
     </section>
 
+    <section id="projectDetail" class="panel project-detail" aria-hidden="true" aria-labelledby="detailTitle">
+      <button id="backToProjects" class="btn-outline back-button" type="button">Back to projects</button>
+      <div class="detail-hero reveal">
+        <div class="detail-copy">
+          <p id="detailEyebrow" class="eyebrow">Case study</p>
+          <h1 id="detailTitle"></h1>
+          <p id="detailSummary" class="lead"></p>
+          <div id="detailTags" class="tags"></div>
+          <dl class="detail-facts">
+            <div>
+              <dt>Role</dt>
+              <dd id="detailRole"></dd>
+            </div>
+            <div>
+              <dt>Timeline</dt>
+              <dd id="detailDuration"></dd>
+            </div>
+            <div>
+              <dt>Level</dt>
+              <dd id="detailDifficulty"></dd>
+            </div>
+          </dl>
+        </div>
+        <figure class="detail-visual">
+          <img id="detailHeroImage" alt="" width="1100" height="720" loading="eager" />
+        </figure>
+      </div>
+
+      <div class="detail-grid reveal">
+        <article class="detail-section">
+          <p class="eyebrow">Brief</p>
+          <h2>Project Overview</h2>
+          <p id="detailBrief"></p>
+        </article>
+        <article class="detail-section">
+          <p class="eyebrow">Outcome</p>
+          <h2>What It Demonstrates</h2>
+          <p id="detailImpact"></p>
+          <div id="detailTools" class="tool-list"></div>
+        </article>
+      </div>
+
+      <section class="detail-section reveal" aria-labelledby="detailHighlightsHeading">
+        <p class="eyebrow">Highlights</p>
+        <h2 id="detailHighlightsHeading">Key Work</h2>
+        <ul id="detailHighlights" class="highlight-list"></ul>
+      </section>
+
+      <section class="gallery-section reveal" aria-labelledby="galleryHeading">
+        <div class="section-head">
+          <p class="eyebrow">Gallery</p>
+          <h2 id="galleryHeading">Project Pictures</h2>
+        </div>
+        <div id="detailGallery" class="gallery-grid"></div>
+      </section>
+    </section>
+
     <section id="contact" class="panel" role="tabpanel" aria-hidden="true">
-      <form id="contactForm" novalidate class="reveal">
-        <h2>Contact Me</h2>
-        <div class="field">
-          <label for="name">Name</label>
-          <input id="name" name="name" required minlength="2" placeholder="Your name"/>
-          <small class="error"></small>
+      <div class="contact-layout">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's Build Something Clear And Useful</h2>
+          <p class="lead">For project opportunities, internships, or feedback on my work, send a message and I will respond as soon as possible.</p>
+          <a class="text-link" href="https://github.com/A-Alguraini" target="_blank" rel="noopener">github.com/A-Alguraini</a>
         </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required placeholder="you@example.com"/>
-          <small class="error"></small>
-        </div>
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required minlength="10" placeholder="How can I help?"></textarea>
-          <small class="error"></small>
-        </div>
-        <button class="btn" id="sendBtn" type="submit">Send</button>
-        <div id="formStatus" role="status" class="status"></div>
-      </form>
+        <form id="contactForm" novalidate class="contact-form reveal">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" required minlength="2" placeholder="Your name" />
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required minlength="10" placeholder="Tell me about the opportunity or project"></textarea>
+            <small class="error"></small>
+          </div>
+          <button class="btn" id="sendBtn" type="submit">Send Message</button>
+          <div id="formStatus" role="status" class="status"></div>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer class="container muted">
-    <p>© <span id="year"></span> My Portfolio</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> A. Alguraini</p>
+      <a class="text-link" href="#projects">Selected work</a>
+    </div>
   </footer>
 
   <div id="toast" role="status" aria-live="assertive"></div>
