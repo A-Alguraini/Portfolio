@@ -1,6 +1,6 @@
-# A. Alguraini Portfolio
+# Abdulaziz Alguraini Portfolio
 
-A professional software engineering portfolio built with vanilla HTML, CSS, and JavaScript. The site highlights selected project case studies with searchable project cards, dedicated detail pages, curated project screenshots, responsive layouts, and a lightweight GitHub feed.
+A professional software engineering portfolio for Abdulaziz Alguraini, a KFUPM Software Engineering student concentrating in Artificial Intelligence and Machine Learning. The site highlights selected project case studies with searchable project cards, dedicated detail pages, curated project screenshots, responsive layouts, and a lightweight GitHub feed.
 
 ## Live Demo
 

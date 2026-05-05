@@ -94,7 +94,7 @@ function setGreeting() {
   if (!target) return;
   const hour = new Date().getHours();
   const part = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
-  target.textContent = `${part}. I build useful, human-centered software.`;
+  target.textContent = `${part}. I build AI/ML web systems and production-ready software.`;
 }
 
 function applyTheme() {
@@ -133,7 +133,7 @@ function setActivePanel(id) {
   });
 
   if (id !== 'projectDetail') {
-    document.title = 'A. Alguraini | Software Engineering Portfolio';
+    document.title = 'Abdulaziz Alguraini | Software Engineering Portfolio';
   }
 
   initReveal();
@@ -427,7 +427,7 @@ function openProject(id, shouldPush = true) {
 
   renderProjectDetail(project);
   setActivePanel('projectDetail');
-  document.title = `${project.title} | A. Alguraini`;
+  document.title = `${project.title} | Abdulaziz Alguraini`;
   scrollToTop();
 }
 
