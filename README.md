@@ -4,9 +4,7 @@ A professional software engineering portfolio for Abdulaziz Alguraini, a KFUPM S
 
 ## Live Demo
 
-Live Demo: https://a-alguraini.github.io/assignment-4/
-
-Repository: https://github.com/A-Alguraini/assignment-4
+Visit your deployed GitHub Pages site once it is published.
 
 ## Featured Projects
 
@@ -44,13 +42,13 @@ Guroosh is a full-stack personal finance management platform built as a SWE363 f
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/A-Alguraini/assignment-4.git
+git clone https://github.com/A-Alguraini/Portfolio.git
 ```
 
 2. Open the project folder:
 
 ```bash
-cd assignment-4
+cd Portfolio
 ```
 
 3. Start a local server:
@@ -70,7 +68,7 @@ Opening `index.html` directly also works for most static content, but a local se
 ## Project Structure
 
 ```text
-assignment-4/
+Portfolio/
   index.html
   css/
     styles.css
@@ -82,12 +80,6 @@ assignment-4/
       kpark/
       guroosh/
       gradpic2022.jpg
-  docs/
-    technical-documentation.md
-    ai-usage-report.md
-  presentation/
-    slides.pdf
-    demo-video.mkv
 ```
 
 ## Project Data
@@ -112,4 +104,4 @@ Deploy with GitHub Pages:
 
 ## Notes
 
-The Guroosh and K-Park case-study images were curated from the provided project PDF reports and optimized into web-ready assets. Temporary extraction files are not required for the live site.
+The Guroosh and K-Park case-study images were curated from project reports and optimized into web-ready assets. Temporary extraction files are not required for the live site.
